@@ -17,7 +17,7 @@ class CashRegister
     quantity.times do
       @@cart << title
     end
-    
+
   end
 
   def apply_discount
@@ -37,7 +37,7 @@ class CashRegister
     binding.pry
     last_item = @@cart.last
 
-    
+
   end
 
 end
