@@ -3,11 +3,10 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :discount, :title, :price, :quantity
 
-  @@cart = []
-
   def initialize(discount = nil)
     @total = 0
     @discount = discount.to_f
+    @@cart = []
   end
 
   def add_item(title, price, quantity = 1)
@@ -35,8 +34,5 @@ class CashRegister
 
   def void_last_transaction
     @total -= @price
-
-
   end
-
 end
