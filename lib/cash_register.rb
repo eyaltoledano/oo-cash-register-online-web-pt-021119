@@ -34,9 +34,8 @@ class CashRegister
   end
 
   def void_last_transaction
-    binding.pry
-    last_item = @@cart.last
-
+    @total -= @price
+    
 
   end
 
