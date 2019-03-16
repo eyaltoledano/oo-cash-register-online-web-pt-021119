@@ -14,7 +14,7 @@ class CashRegister
     @total += (price * quantity)
     @quantity = quantity
 
-    quantity.times
+    quantity.times { @@cart << title }
   end
 
   def apply_discount
@@ -27,7 +27,7 @@ class CashRegister
   end
 
   def items
-    
+
   end
 
 end
